@@ -4,11 +4,8 @@ theme: just-the-docs
 
 url: https://glutenfreehackerscollective.org
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
-
 # Logo in browser tab
-favicon_ico: "/assets/images/logo.jpg"
+favicon_ico: "/assets/images/transparent_logo.png"
 
 # Ow, my eyes!!
 color_scheme: dark
@@ -18,4 +15,4 @@ nav_enabled: true
 
 
 # Logo on home page
-logo: "/assets/images/logo_name.jpg"
+logo: "/assets/images/transparent_logo_name.png"

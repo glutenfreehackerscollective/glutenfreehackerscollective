@@ -10,6 +10,7 @@ This is a page for navigating through different conferences in Hacker Summer Cam
 
 
 ---
+[DEF CON]({% link docs/conferences/defcon.md %}), [BsidesLV]({% link docs/conferences/bsideslv.md %}), and [black hat]({% link docs/conferences/blackhat.md %}), as well as the variety of other conferences that happen consecutively during early August each year have become collectively known as Hacker Summer Camp.
 
 ## Food in Las Vegas
 
@@ -26,5 +27,5 @@ This is a page for navigating through different conferences in Hacker Summer Cam
 7. Ito Omakase - Omakase sushi. Not dedicated gluten free, but they will make sure everything is separate for your meal to ensure no CC. 
 8. Evel Pie - Deep dish pizza, GF dough is made in house. 
 9. In-n-Out - Not dedicated gluten free, but the only glutenous item is the burger bun. They offer lettuce wraps. Fries are gluten free. 
-
+10. Firefly - Tapas, with a variety of cuisines. With two locations in LV Firefly has fantastic allergen protocols, and can make most of their menu GF.
 
