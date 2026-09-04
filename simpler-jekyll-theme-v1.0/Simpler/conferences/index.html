@@ -1,0 +1,82 @@
+---
+layout: default
+title: Conferences
+description: Information and gluten-free guidance for conferences where the collective has a presence.
+permalink: /conferences/
+---
+
+{% if page.image %}
+<!-- begin hero image -->
+<div class="hero__image">
+  <div class="hero__image__inner">
+    <img class="lazy" data-src="{{page.image}}" alt="{{site.data.settings.title}}">
+  </div>
+</div>
+<!-- end hero image -->
+{% endif %}
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="page-wrapper__info">
+      <h1 class="page-info__title">{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="page-info__description">{{ page.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      {% if site.conferences.size > 0 %}
+        {% for post in site.conferences offset:0 %}
+          {% include article.html %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+<!--  <div class="container animate">
+    <nav class="conference-menu" aria-label="Conference pages">
+      <ul class="conference-menu__list list-reset">
+        {% for conference in site.conferences reversed %}
+        {% assign conference_title = conference.title | default: conference.slug | replace: '-', ' ' | capitalize %}
+        <li class="conference-menu__item">
+          <a href="{{ conference.url }}" class="conference-menu__link">{{ conference_title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <div class="row">
+      {% for conference in site.conferences reversed %}
+      {% assign conference_title = conference.title | default: conference.slug | replace: '-', ' ' | capitalize %}
+      <article class="project col col-4 col-w-6 col-t-12">
+        <div class="project__content">
+          {% if conference.image %}
+          <div class="project__head">
+            <div class="project__image">
+              <img class="lazy" data-src="{{ conference.image }}" alt="{{ conference_title }}">
+            </div>
+          </div>
+          {% endif %}
+          <div class="project__inner">
+            <div class="project__info">
+              {% if conference.subtitle %}
+              <div class="project__subtitle">{{ conference.subtitle }}</div>
+              {% endif %}
+            </div>
+            <h2 class="project__title">
+                <a href="{{ conference.url }}" class="project__link">{{ conference_title }}</a>
+            </h2>
+            {% if conference.summary %}
+            <p class="project__excerpt">{{ conference.summary }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</div> -->
