@@ -22,7 +22,13 @@ menu_settings:
       url: "/about/"
     - title: "Conferences"
       url: "/conferences/"
-      collection: "conferences"
+      submenu:
+        - title: "All Conferences"
+          url: "/conferences/"
+        - title: "Hacker Summer Camp"
+          url: "/conferences/hackersummercamp/"
+        - title: "Wild West Hackin Fest"
+          url: "/conferences/wwhf/"
     - title: "Blog & Resources"
       url: "/blog/"
     # Template-only portfolio and contact form links are disabled.
@@ -50,7 +56,7 @@ hero:
   enable: true
   hero_title: Gluten Free <span><i>Hackers</i></span> Collective # Add the "span" tag to highlight text.
   hero_description: Welcome one, welcome all! The Gluten-Free Hackers Collective is here to help you find gluten-free eats, wherever your adventure through cyberspace takes you. Feel free to checkout the site, come hang with us in discord, and PR any recommendations that you have for your fellow hackers!
-  hero_image: "/images/01.jpg"
+  hero_image: "/images/cybersecurity-hero.png"
   # hero_button_contact: Get In Touch # Disabled with the unused template contact form.
   hero_button_about: About Us
 

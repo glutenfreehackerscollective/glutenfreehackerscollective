@@ -2,6 +2,7 @@
 layout: post
 title: BSides Las Vegas
 date: 2026-08-11
+image: '/images/bsides.jpg'
 tags: [Conference]
 ---
 

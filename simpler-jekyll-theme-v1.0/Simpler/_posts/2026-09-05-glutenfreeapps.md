@@ -1,9 +1,11 @@
 ---
 title: Gluten Free Food Finder Apps
-layout: home
-nav_order: 4
+layout: post
+date: 2026-09-05
+description: A practical guide to apps the collective uses to find gluten-free restaurants and safer places to eat.
+image: '/images/Glutendude.png'
+tags: [apps, resources]
 ---
-# Gluten Free Food Finder Apps
 Ever wonder how everyone is finding all these great gluten free places to eat at? Look no further! Here is a collection of apps that we have used to find safe places for us to eat.
 
 ---
@@ -12,13 +14,11 @@ The [Gluten Dude](https://glutendude.app/) restaurant finding app does require a
 
 The app offers a 7 day free trial, after the trial expires you can purchase the app through the app store on a subscription basis, or wait until the lifetime pass is on sale and purchase it that way. Sale prices range from ~$50  to ~$100 USD for a lifetime pass depending on the sale.
 
-![Gluten Dude restaurant view](../../assets/images/Glutendude.png)
+![Gluten Dude restaurant view]({{ '/images/Glutendude.png' | relative_url }})
 
 ## Find Me Gluten Free
 [Find Me Gluten Free](https://www.findmeglutenfree.com/) has a large amount of restaurants that are rated all around the world. This app allow users to review restaurants for the quality of the food, how safe it is, and variety of gluten free food available. You can also search for all restaurants that are dedicated gluten free facilities. This is a free app, but there are additional features that you can access for a subscription fee. 
 
-![FMGF list view](../../assets/images/FMGF.png)
-
-
+![FMGF list view]({{ '/images/FMGF.png' | relative_url }})
 
 
