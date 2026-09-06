@@ -7,7 +7,7 @@ description: Black Hat USA brings security researchers, practitioners, vendors, 
 tags: [Conference]
 ---
 
-[Black Hat USA](https://www.blackhat.com/) is one of the best-known professional cybersecurity events in the world. It takes place in Las Vegas during Hacker Summer Camp, alongside BSides Las Vegas and DEF CON, and brings together security researchers, defenders, executives, vendors, and practitioners from across the industry.
+[Black Hat USA](https://www.blackhat.com/) is one of the best-known professional cybersecurity events in the world. It takes place in Las Vegas during Hacker Summer Camp, alongside BSides Las Vegas and DEF CON, and brings together security researchers, defenders, executives, vendors, and practitioners from across the industry. 
 
 Black Hat has a more structured and industry-focused atmosphere than DEF CON. The event begins with multi-day, hands-on Trainings covering a wide range of offensive and defensive security topics. These are followed by the main conference, where researchers present peer-reviewed Briefings on newly discovered vulnerabilities, emerging threats, defensive techniques, and other developments in information security.
 
