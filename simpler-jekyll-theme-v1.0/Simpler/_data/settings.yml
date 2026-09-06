@@ -22,25 +22,23 @@ menu_settings:
       url: "/about/"
     - title: "Conferences"
       url: "/conferences/"
-      submenu:
-      - title: "Hacker Summer Camp"
-        url: "/conferences/hackersummercamp/"
-      - title: "Wild West Hacking Fest"
-        url: "/conferences/wwhf/"
-    - title: "Projects"
-      url: "/projects/"
-    - title: "Pages"
-      submenu:
-      - url: "/contact/"
-        title: "Contact"
-      - url: "/blog/"
-        title: "blog"
+      collection: "conferences"
+    - title: "Blog & Resources"
+      url: "/blog/"
+    # Template-only portfolio and contact form links are disabled.
+    # - title: "Projects"
+    #   url: "/projects/"
+    # - title: "Pages"
+    #   submenu:
+    #   - url: "/contact/"
+    #     title: "Contact"
 
 
 #-------------------------------
 # Social Settings
-social:
-- {icon: "fa-brands fa-twitter", link: "https://twitter.com"}
+# The template's placeholder Twitter link is disabled until a collective account is added.
+# social:
+# - {icon: "fa-brands fa-twitter", link: "https://twitter.com"}
 
 # Example of adding a new link to the header and footer - {icon: "fa-brands fa-youtube", link: "https://youtube.com"}
 # Other icons can be found at https://fontawesome.com/icons
@@ -53,27 +51,27 @@ hero:
   hero_title: Gluten Free <span><i>Hackers</i></span> Collective # Add the "span" tag to highlight text.
   hero_description: Welcome one, welcome all! The Gluten-Free Hackers Collective is here to help you find gluten-free eats, wherever your adventure through cyberspace takes you. Feel free to checkout the site, come hang with us in discord, and PR any recommendations that you have for your fellow hackers!
   hero_image: "/images/01.jpg"
-  hero_button_contact: Get In Touch
+  # hero_button_contact: Get In Touch # Disabled with the unused template contact form.
   hero_button_about: About Us
 
 
 #-------------------------------
 # Projects Settings
-section_projects_title: 👨🏻‍💻 Selected Works
+# section_projects_title: 👨🏻‍💻 Selected Works # Template portfolio disabled.
 
 #-------------------------------
 
 # Blog Section
-section_blog_title: 📚 Read Latest Posts
+section_blog_title: Latest Resources
 #-------------------------------
 
 
 # Conference Section
-section_blog_title: Get More Info on Conferences
+# section_blog_title: Get More Info on Conferences # Unused duplicate template setting.
 #-------------------------------
 
 # Tags Section
-section_tags_title: ✌️ Explore Topics
+# section_tags_title: ✌️ Explore Topics # Template blog tags disabled.
 
 
 #-------------------------------
@@ -101,12 +99,13 @@ footer_menu_settings:
       url: "/about/"
     - url: "/conferences/"
       title: "Conferences"
-    - title: "Projects"
-      url: "/projects/"
     - url: "/blog/"
-      title: "Blog"
-    - url: "/contact/"
-      title: "Contact"
+      title: "Blog & Resources"
+    # Template-only portfolio and contact links are disabled.
+    # - title: "Projects"
+    #   url: "/projects/"
+    # - url: "/contact/"
+    #   title: "Contact"
 
 
 

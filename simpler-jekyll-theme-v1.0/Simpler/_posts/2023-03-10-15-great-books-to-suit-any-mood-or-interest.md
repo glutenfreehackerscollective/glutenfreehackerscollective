@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false # Disabled template demo; remove this line to restore it.
 title: 15 Great Books to Suit Any Mood or Interest
 description: Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.
 date: 2023-03-10 15:01:35 +0300

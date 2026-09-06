@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hacker Summer Camp (DEFCON/BlackHat/BSidesLV)
+title: Hacker Summer Camp
 date: 2026-08-11
 image: '/images/las_vegas_sign.jpg'
 tags: [Conference]

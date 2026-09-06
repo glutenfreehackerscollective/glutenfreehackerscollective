@@ -1,4 +1,5 @@
 ---
+published: false # Disabled template demo; remove this line to restore it.
 title: Hand Drawn People
 subtitle: Poster
 summary: Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc curabitur tortor.

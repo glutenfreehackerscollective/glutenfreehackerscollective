@@ -1,5 +1,6 @@
 ---
 layout: page
+published: false # Disabled template style-guide page; remove this line to restore it.
 title: Elements
 permalink: /elements/
 image: '/images/19.jpg'

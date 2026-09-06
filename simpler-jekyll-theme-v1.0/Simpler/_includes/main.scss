@@ -64,7 +64,7 @@ Whether you're an illustrator, web designer, photographer, or artist, Simpler is
 /* >>>>>>>>>>>>>> :: 1.5-Grid <<<<<<<<<<<<<<< */
 @import '1-tools/grid';
 /* >>>>>>>>>>>>>> :: 1.6-Tiny Slider <<<<<<<<<<<<<<< */
-@import '1-tools/tiny-slider';
+// @import '1-tools/tiny-slider'; // Disabled with the template testimonials carousel.
 /* >>>>>>>>>>>>>> :: 1.7-Animate <<<<<<<<<<<<<<< */
 @import '1-tools/animate';
 /* >>>>>>>>>>>>>> :: 1.8-Free Font Awesome (6.2.0) <<<<<<<<<<<<<<< */
@@ -84,27 +84,27 @@ Whether you're an illustrator, web designer, photographer, or artist, Simpler is
 /* >>>>>>>>>>>>>> :: 3.1-Header <<<<<<<<<<<<<<< */
 @import '3-modules/header';
 /* >>>>>>>>>>>>>> :: 3.2-Pagination <<<<<<<<<<<<<<< */
-@import '3-modules/pagination';
+// @import '3-modules/pagination'; // Disabled with the template blog.
 /* >>>>>>>>>>>>>> :: 3.3-Buttons <<<<<<<<<<<<<<< */
 @import '3-modules/buttons';
 /* >>>>>>>>>>>>>> :: 3.4-Gallery <<<<<<<<<<<<<<< */
-@import '3-modules/gallery';
+// @import '3-modules/gallery'; // Disabled with the template gallery examples.
 /* >>>>>>>>>>>>>> :: 3.5-Hero <<<<<<<<<<<<<<< */
 @import '3-modules/hero';
 /* >>>>>>>>>>>>>> :: 3.6-Article <<<<<<<<<<<<<<< */
 @import '3-modules/article';
 /* >>>>>>>>>>>>>> :: 3.7-Contact <<<<<<<<<<<<<<< */
-@import '3-modules/contact';
+// @import '3-modules/contact'; // Disabled with the template contact form.
 /* >>>>>>>>>>>>>> :: 3.8-Sections <<<<<<<<<<<<<<< */
 @import '3-modules/sections';
 /* >>>>>>>>>>>>>> :: 3.9-Projects <<<<<<<<<<<<<<< */
-@import '3-modules/projects';
+// @import '3-modules/projects'; // Disabled with the template portfolio.
 /* >>>>>>>>>>>>>> :: 3.10-Testimonials <<<<<<<<<<<<<<< */
-@import '3-modules/testimonials';
+// @import '3-modules/testimonials'; // Disabled with the template testimonials.
 /* >>>>>>>>>>>>>> :: 3.11-Section Tags <<<<<<<<<<<<<<< */
-@import '3-modules/section-tags';
+// @import '3-modules/section-tags'; // Disabled with the template blog tags.
 /* >>>>>>>>>>>>>> :: 3.12-Subscribe <<<<<<<<<<<<<<< */
-@import '3-modules/subscribe';
+// @import '3-modules/subscribe'; // Disabled with the template newsletter.
 /* >>>>>>>>>>>>>> :: 3.13-Social <<<<<<<<<<<<<<< */
 @import '3-modules/social';
 /* >>>>>>>>>>>>>> :: 3.14-Footer <<<<<<<<<<<<<<< */
@@ -117,6 +117,6 @@ Whether you're an illustrator, web designer, photographer, or artist, Simpler is
 /* >>>>>>>>>>>>>> :: 4.1-Post <<<<<<<<<<<<<<< */
 @import '4-layouts/post';
 /* >>>>>>>>>>>>>> :: 4.2-Project <<<<<<<<<<<<<<< */
-@import '4-layouts/project';
+// @import '4-layouts/project'; // Disabled with the template portfolio.
 /* >>>>>>>>>>>>>> :: 4.3-Tags Page <<<<<<<<<<<<<<< */
 @import '4-layouts/tags-page';

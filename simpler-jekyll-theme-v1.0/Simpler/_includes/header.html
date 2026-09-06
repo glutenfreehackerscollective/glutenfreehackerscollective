@@ -24,18 +24,29 @@
             <ul class="nav__list list-reset">
 
             {% for item in site.data.settings.menu_settings.menu_items %}
-              {% if item.submenu %}
+              {% if item.collection %}
               <li class="nav__item dropdown">
-                <span class="nav__link dropdown-toggle">{{ item.title }} <i class="arrow-down fa-solid fa-chevron-down"></i></span>
+                <a href="{{ item.url | relative_url }}" class="nav__link dropdown-toggle" aria-haspopup="true">{{ item.title | escape }} <i class="arrow-down fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                  <a href="{{ item.url | relative_url }}" class="nav__link{% if page.url == item.url %} active-link{% endif %}">All {{ item.title | escape }}</a>
+                  {% assign collection_items = site[item.collection] | sort_natural: "title" %}
+                  {% for collection_item in collection_items %}
+                    <a href="{{ collection_item.url | relative_url }}" class="nav__link{% if page.url == collection_item.url %} active-link{% endif %}">{{ collection_item.title | escape }}</a>
+                  {% endfor %}
+                </div>
+              </li>
+              {% elsif item.submenu %}
+              <li class="nav__item dropdown">
+                <span class="nav__link dropdown-toggle">{{ item.title | escape }} <i class="arrow-down fa-solid fa-chevron-down"></i></span>
                 <div class="dropdown-menu">
                   {% for submenu-item in item.submenu %}
-                    <a href="{{ submenu-item.url }}" class="nav__link{% if page.url == submenu-item.url %} active-link{% endif %}">{{submenu-item.title}}</a>
+                    <a href="{{ submenu-item.url | relative_url }}" class="nav__link{% if page.url == submenu-item.url %} active-link{% endif %}">{{ submenu-item.title | escape }}</a>
                   {% endfor %}
                 </div>
               </li>
               {% else %}
               <li class="nav__item">
-                <a href="{{ item.url | relative_url }}" class="nav__link{% if page.url == item.url %} active-link{% endif %}">{{ item.title }}</a>
+                <a href="{{ item.url | relative_url }}" class="nav__link{% if page.url == item.url %} active-link{% endif %}">{{ item.title | escape }}</a>
               </li>
               {% endif %}
             {% endfor %}

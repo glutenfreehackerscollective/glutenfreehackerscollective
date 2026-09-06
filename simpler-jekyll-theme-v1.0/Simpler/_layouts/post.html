@@ -7,6 +7,7 @@ layout: default
 
     <div class="post-info">
 
+      {% if page.collection == "posts" %}
       <div class="post-meta">
         {% if page.tags.size >= 1 %}
         <div class="post-tags">
@@ -22,6 +23,7 @@ layout: default
           {% if words < 360 %}1 min read {% else %}{{ words | divided_by:180 }} min read {% endif %}
         </span>
       </div>
+      {% endif %}
 
       <h1 class="post-title">{{ page.title | escape }}</h1>
 
@@ -52,15 +54,18 @@ layout: default
       {{ content }}
     </div>
 
-    {% include share-buttons.html %}
-
-    {% include post-navigation.html %}
+    {% if page.collection == "posts" %}
+      {% include share-buttons.html %}
+      {% include post-navigation.html %}
+    {% endif %}
 
   </article>
 </div>
 <!-- end post -->
 
-{% include related-posts.html %}
+{% if page.collection == "posts" %}
+  {% include related-posts.html %}
+{% endif %}
 
 {% if site.data.settings.disqus_identifier %}
 <div class="container">

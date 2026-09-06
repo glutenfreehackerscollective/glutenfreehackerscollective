@@ -223,7 +223,8 @@
     &.dropdown {
       position: relative;
 
-      &:hover {
+      &:hover,
+      &:focus-within {
         .dropdown-menu {
           opacity: 1;
           visibility: visible;
