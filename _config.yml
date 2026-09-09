@@ -1,18 +1,67 @@
-title: The Gluten Free Hackers Collective
-description: A group of humans trying to hack computers, and yeet that wheat.
-theme: just-the-docs
+#-------------------------------
+# General Site Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://glutenfreehackerscollective.org" # the base hostname & protocol for your site, e.g. http://example.com
+favicon_ico: "/assets/images/favicon.ico"
 
-url: https://glutenfreehackerscollective.org
+#-------------------------------
+# Build Settings
+markdown: kramdown
+permalink: /:title
+plugins:
+  # - jekyll-paginate # Disabled with the unused template blog.
+  - jekyll-sitemap
 
-# Logo in browser tab
-favicon_ico: "/assets/images/transparent_logo.png"
-
-# Ow, my eyes!!
-color_scheme: dark
-
-# Enable or disable the side/mobile menu globally
-nav_enabled: true
+# paginate: 6 # Disabled with the unused template blog.
+# paginate_path: "/page/:num"
 
 
-# Logo on home page
-logo: "/assets/images/transparent_logo_name.png"
+
+#-------------------------------
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug/
+  # The template-only portfolio collection remains disabled.
+  # projects:
+  #   output: true
+  #   permalink: /project/:slug
+  conferences:
+    output: true
+    permalink: /conferences/:slug/
+
+# Pages Path
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  # The template-only portfolio defaults remain disabled.
+  # - scope:
+  #     path: ""
+  #     type: "projects"
+  #   values:
+  #     layout: "project"
+  - scope:
+      path: ""
+      type: "conferences"
+    values:
+      layout: "post"
+
+sass:
+  sass_dir: _sass
+  style: compressed
