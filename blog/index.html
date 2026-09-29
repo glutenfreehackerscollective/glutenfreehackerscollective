@@ -1,0 +1,43 @@
+---
+layout: default
+title: Blog & Resources
+description: Articles, practical guidance, and other resources for gluten-free hackers.
+image:
+---
+
+{% if page.image %}
+<!-- begin hero image -->
+<div class="hero__image">
+  <div class="hero__image__inner">
+    <img class="lazy" data-src="{{page.image}}" alt="{{site.data.settings.title}}">
+  </div>
+</div>
+<!-- end hero image -->
+{% endif %}
+
+<!-- begin page-wrapper -->
+<div class="page-wrapper">
+  <div class="container">
+    <div class="page-wrapper__info">
+      <h1 class="page-info__title">{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.blog__settings.blog__title }}{% endif %}</h1>
+      {% if page.description %}
+        <p class="page-info__description">{{ page.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      {% if site.posts.size > 0 %}
+        {% for post in site.posts offset:0 %}
+          {% include article.html %}
+        {% endfor %}
+      {% else %}
+        <div class="col col-12">
+          <p>Resources are coming soon. Check back for gluten-free guides, community notes, and other useful information.</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<!-- end page-wrapper -->
